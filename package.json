@@ -7,6 +7,10 @@
   "author": "Eric Lifka (eric.lifka@gmail.com)",
   "scripts": {
     "start-api": "cd api/ && npm start",
-    "start-client": "cd client/ && npm start"
+    "start-client": "cd client/ && npm start",
+
+    "install": "npm run install-api && npm run install-client",
+    "install-api": "cd api/ && npm install",
+    "install-client": "cd client/ && npm install && bower install"
   }
 }
