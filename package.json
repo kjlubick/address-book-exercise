@@ -3,8 +3,10 @@
   "description": "Programming exercise: Create an address book",
   "version": "1.0.0",
   "private": true,
+  "repository": "https://github.com/ericlifka/address-book-exercise.git",
+  "author": "Eric Lifka (eric.lifka@gmail.com)",
   "scripts": {
     "start-api": "cd api/ && npm start",
-    "start-client": "cd client/ && ember server"
+    "start-client": "cd client/ && npm start"
   }
 }
