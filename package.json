@@ -8,5 +8,7 @@
     "express": "^4.12.2"
   },
   "devDependencies": {},
-  "main": "server.js"
+  "scripts": {
+    "start": "node api/app.js"
+  }
 }
