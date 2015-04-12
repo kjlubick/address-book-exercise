@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node api/app.js"
+    "start-api": "cd api/ && npm start",
+    "start-client": "cd client/ && ember server"
   }
 }
