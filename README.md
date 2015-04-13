@@ -1,7 +1,7 @@
 Programming Exercise: Address Book
 ---
 
-This is a version of the Address Book programming exercise (original found [here](https://github.com/philidem/address-book-exercise)
+This is a version of the Address Book programming exercise (original found [here](https://github.com/philidem/address-book-exercise))
 that uses Ember.js to provide a rich client framework already configured to ease getting started.
 
 ## Dependencies
@@ -33,16 +33,18 @@ npm run start-client
 ## URL Endpoints
 The api server runs by default on port 8080. It provides a data url at /api/people. This endpoint is proxied by the
 client server so it can be referenced as if it were part of the same system.
+
+The client server runs by default on port 4200. It proxies all requests to the api server.
+
 **People Data:**
-http://localhost:8080/api/people
+http://localhost:4200/api/people
 
 ## Goals
 - Fork this repo
 - Create a simple address book web application and use the given static
   HTML mockup (`mockup/index.html`) as a starting point or as inspiration.
 - Your client application should fetch people data from the api source.
-- Renders the names of all people from the people data in the left panel
-  in alphabetical order.
+- It should render the names of all people from the people data in the left panel in alphabetical order.
 - When a person's name is clicked in the left panel, render the full profile in the right panel.
 - Update the `README.md` with any instructions for running the web application.
 - When you are done, send a pull request with your changes.
