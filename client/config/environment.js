@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'address-book',
+    modulePrefix: 'address-book-client',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
