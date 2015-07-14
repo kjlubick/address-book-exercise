@@ -1,29 +1,22 @@
 # Address-book-client
 
-This is the client app for the Address Book exercise. It utilizes ember and ember-cli to provide
+This is the client app for the Address Book exercise. It utilizes AngularJS and Grunt to provide
 an already configured development environment for this project.
 
 ## Prerequisites
 
-See parent documentation [here](https://github.com/ericlifka/address-book-exercise/blob/master/README.md)
+See parent documentation [here](https://github.com/michaelmcauley/address-book-exercise/blob/master/README.md)
 
 ## Installation
 
-* See parent documentation [here](https://github.com/ericlifka/address-book-exercise/blob/master/README.md)
+* See parent documentation [here](https://github.com/michaelmcauley/address-book-exercise/blob/master/README.md)
 
 ## Running / Development
 
-* See parent documentation [here](https://github.com/ericlifka/address-book-exercise/blob/master/README.md)
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+* See parent documentation [here](https://github.com/michaelmcauley/address-book-exercise/blob/master/README.md)
 
 ## Further Reading / Useful Links
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
+* [AngularJS](http://angularjs.org/)
 * Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+  * [AngularJS Batarang for Chrome](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk?hl=en)

@@ -1,7 +1,7 @@
 {
   "name": "address-book-client",
   "version": "1.0.0",
-  "description": "ember and ember-cli powered client for the address-book programming exercies",
+  "description": "angularjs powered client for the address-book programming exercies",
   "private": true,
   "directories": {
     "doc": "doc",

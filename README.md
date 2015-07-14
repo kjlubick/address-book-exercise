@@ -2,7 +2,7 @@ Programming Exercise: Address Book
 ---
 
 This is a version of the Address Book programming exercise (original found [here](https://github.com/philidem/address-book-exercise))
-that uses Ember.js to provide a rich client framework already configured to ease getting started.
+that uses AngularJS to provide a rich client framework already configured to ease getting started.
 
 ## Dependencies
 You will need the following things properly installed on your computer.
@@ -10,7 +10,7 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
+* [Grunt](http://gruntjs.com/)
 
 ## Setup
 1. Clone the repository and `cd` into it
@@ -55,8 +55,8 @@ http://localhost:4200/api/people
 - Expand on the flexibility of the people data and how its rendered to the user (be creative!)
 
 ### Additional Notes
-- If you have any questions then [open an issue](https://github.com/ericlifka/address-book-exercise/issues)
-- This version of the exercise is meant to be done with Ember.js, for a more open ended one see [here](https://github.com/philidem/address-book-exercise)
+- If you have any questions then [open an issue](https://github.com/michaelmcauley/address-book-exercise/issues)
+- This version of the exercise is meant to be done with AngularJS, for a more open ended one see [here](https://github.com/philidem/address-book-exercise)
 - Feel free to add any libraries to the client or server apps that you'd like to utilize.
 - Feel free to modify `data/people.json` with any changes that you see fit.
 - Feel free to add additional routes to the express app by modifying `api/app.js`

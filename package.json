@@ -3,8 +3,8 @@
   "description": "Programming exercise: Create an address book",
   "version": "1.0.0",
   "private": true,
-  "repository": "https://github.com/ericlifka/address-book-exercise.git",
-  "author": "Eric Lifka (eric.lifka@gmail.com)",
+  "repository": "https://github.com/michaelmcauley/address-book-exercise.git",
+  "author": "Mike McAuley (mcauley86@gmail.com)",
   "scripts": {
     "start-api": "cd api/ && npm start",
     "start-client": "cd client/ && npm start",
