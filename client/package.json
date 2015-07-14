@@ -4,7 +4,7 @@
   "description": "angularjs powered client for the address-book programming exercies",
   "private": true,
   "directories": {
-    "doc": "doc",
+    "doc": "doc"
   },
   "scripts": {
     "start": "grunt server",
