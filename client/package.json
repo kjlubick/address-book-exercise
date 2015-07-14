@@ -5,7 +5,6 @@
   "private": true,
   "directories": {
     "doc": "doc",
-    "test": "tests"
   },
   "scripts": {
     "start": "grunt server",
