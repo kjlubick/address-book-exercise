@@ -4,6 +4,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-connect-proxy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-bower-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-angular-templates');
 
   grunt.initConfig({
 
@@ -34,7 +37,26 @@ module.exports = function(grunt) {
     concat: {
       js: {
         src: 'src/**/*.js',
-        dest: 'dist/app.js'
+        dest: 'dist/js/app.js'
+      },
+      css: {
+        src: 'src/**/*.css',
+        dest: 'dist/css/app.css'
+      }
+    },
+
+    ngtemplates: {
+      addressBook: {
+        cwd: 'src',
+        src: ['**/*.html', '!index.html'],
+        dest: 'dist/js/templates.js'
+      }
+    },
+
+    bower_concat: {
+      lib: {
+        dest: 'dist/js/lib.js',
+        cssDest: 'dist/css/lib.css'
       }
     },
 
@@ -53,6 +75,14 @@ module.exports = function(grunt) {
       js: {
         files: 'src/**/*.js',
         tasks: 'concat:js'
+      },
+      css: {
+        files: 'src/**/*.css',
+        tasks: 'concat:css'
+      },
+      html: {
+        files: 'src/**/*.html',
+        tasks: ['copy', 'ngtemplates']
       }
     }
 
@@ -60,7 +90,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', function(target) {
     grunt.task.run([
-      'concat:js'
+      'concat',
+      'bower_concat',
+      'copy',
+      'ngtemplates'
     ]);
   });
 

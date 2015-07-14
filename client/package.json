@@ -9,14 +9,15 @@
   },
   "scripts": {
     "start": "grunt server",
-    "build": "ember build",
-    "test": "ember test"
+    "build": "grunt build"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-angular-templates": "^0.5.7",
+    "grunt-bower-concat": "^0.5.0",
     "grunt-connect-proxy": "^0.2.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-connect": "^0.10.1",
