@@ -2,14 +2,16 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-connect-proxy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
+
     connect: {
       server: {
         options: {
           port: 4200,
-          base: 'app',
-          keepalive: true,
+          base: 'dist',
           open: true,
           middleware: function (connect, options, defaultMiddleware) {
              var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;
@@ -27,13 +29,47 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    concat: {
+      js: {
+        src: 'src/**/*.js',
+        dest: 'dist/app.js'
+      }
+    },
+
+    copy: {
+      index: {
+        files: [
+          {
+            src: 'src/index.html',
+            dest: 'dist/index.html'
+          }
+        ]
+      }
+    },
+
+    watch: {
+      js: {
+        files: 'src/**/*.js',
+        tasks: 'concat:js'
+      }
     }
+
+  });
+
+  grunt.registerTask('build', function(target) {
+    grunt.task.run([
+      'concat:js'
+    ]);
   });
 
   grunt.registerTask('server', function(target) {
     grunt.task.run([
+      'build',
       'configureProxies:server',
-      'connect'
+      'connect:server',
+      'watch'
     ]);
   });
 
