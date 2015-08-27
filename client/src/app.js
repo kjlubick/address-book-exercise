@@ -12,3 +12,14 @@ addressBook.config([
     });
   }
 ]);
+
+addressBook.factory('apiService', function($http) {
+  var api = {
+    getPeople: function() {
+      return $http.get('/api/people').then(function (response) {
+        return response.data.people;
+      });
+    }
+  };
+  return api;
+});
