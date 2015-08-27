@@ -1,7 +1,7 @@
 <div class="app-directory-container">
 
 	<ul class="app-directory clean-list">
-    <li class="app-directory-item" ng-repeat='person in people'>
+    <li class="app-directory-item" ng-repeat="person in people | orderBy:'name'">
       <div>{{person.name}}</div>
     </li>
   </ul>

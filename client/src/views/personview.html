@@ -18,7 +18,7 @@
     <h3>Education</h3>
     <div class='app-section'>
       <ul class="app-section-body clean-list">
-        <li class="app-history-item" ng-repeat='edu in person.education | orderBy: edu.startYear : true'>
+        <li class="app-history-item" ng-repeat="edu in person.education | orderBy:'-startYear'">
           <div class="app-history-item-dates">{{edu.startYear}}-{{edu.endYear}}</div>
           <div class="app-history-item-body">
             <div class="app-history-item-title">
@@ -33,7 +33,7 @@
     <h3>Experience</h3>
     <div class='app-section'>
       <ul class="app-section-body clean-list">
-        <li class="app-history-item" ng-repeat='job in person.workExperience | orderBy: job.startYear : true'>
+        <li class="app-history-item" ng-repeat="job in person.workExperience | orderBy:'-startYear'">
           <div class="app-history-item-dates">{{job.startYear}}-{{job.endYear}}</div>
           <div class="app-history-item-body">
             <div class="app-history-item-title">
