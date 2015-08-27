@@ -5,7 +5,12 @@ angular.module('addressBook').controller('indexCtrl', [
     apiService.getPeople().then(function(response) {
       $scope.people = response;
 
-      $scope.person = $scope.people[0];
+      $scope.setSelected = function(person) {
+        $scope.person = person;
+      };
+
+      $scope.setSelected($scope.people[0]);
+
     });
     
   }
