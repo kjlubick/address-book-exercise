@@ -1,18 +1,49 @@
-<div class='person-view'>
-  <div class="app-person-profile-header">
-    <div class="app-person-profile-photo" style="background-image: url(avatar.png)"></div>
-    <h2>{{person.name}}</h2>
-    <div class="app-person-profile-department">
-        {{person.name}}
-    </div>
-    <div class="app-person-profile-phone-number">
-        {{person.phone}}
-    </div>
-    <div class="app-person-profile-email">
-        <a ng-href="mailto:{{person.email}}">{{person.email}}</a>
-    </div>
-</div>
-  <h2>
-  <div class=
-</div>
+<div class='app-person-profile-container'>
+  <div class='app-person-profile'>
 
+    <div class="app-person-profile-header">
+      <div class="app-person-profile-photo" style="background-image: url(avatar.png)"></div>
+      <h2>{{person.name}}</h2>
+      <div class="app-person-profile-department">
+          {{person.title}}
+      </div>
+      <div class="app-person-profile-phone-number">
+          {{person.phone}}
+      </div>
+      <div class="app-person-profile-email">
+          <a ng-href="mailto:{{person.email}}">{{person.email}}</a>
+      </div>
+    </div>
+
+    <h3>Education</h3>
+    <div class='app-section'>
+      <ul class="app-section-body clean-list">
+        <li class="app-history-item" ng-repeat='edu in person.education | orderBy: edu.startYear : true'>
+          <div class="app-history-item-dates">{{edu.startYear}}-{{edu.endYear}}</div>
+          <div class="app-history-item-body">
+            <div class="app-history-item-title">
+              {{edu.institution}}
+            </div>
+              {{edu.degree}}
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <h3>Experience</h3>
+    <div class='app-section'>
+      <ul class="app-section-body clean-list">
+        <li class="app-history-item" ng-repeat='job in person.workExperience | orderBy: job.startYear : true'>
+          <div class="app-history-item-dates">{{job.startYear}}-{{job.endYear}}</div>
+          <div class="app-history-item-body">
+            <div class="app-history-item-title">
+              {{job.institution}}
+            </div>
+              {{job.title}}
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
