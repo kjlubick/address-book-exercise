@@ -1,4 +1,6 @@
-var addressBook = angular.module('addressBook', ['ngRoute']);
+/*global angular*/
+var addressBook = angular.module('addressBook', 
+	['ngRoute']);
 
 addressBook.config([
   '$routeProvider',
